@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="{{ request.locale.iso_code }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{ page_title }} - The Nordalpha</title>
+  {{ content_for_header }}
+
+  <style>
+    :root {
+      --bg-color: #0b0f0d;
+      --card-bg: #141d1a;
+      --text-color: #e2e8f0;
+      --accent-color: #4ade80;
+      --border-color: #24332f;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: var(--card-bg);
+      border-bottom: 1px solid var(--border-color);
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      color: var(--text-color);
+      letter-spacing: 2px;
+      font-size: 24px;
+      text-transform: uppercase;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    footer {
+      background-color: var(--card-bg);
+      border-top: 1px solid var(--border-color);
+      padding: 30px;
+      text-align: center;
+      font-size: 14px;
+      color: #718096;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>THE NORDALPHA</h1>
+  </header>
+
+  <main role="main">
+    {{ content_for_layout }}
+  </main>
+
+  <footer>
+    <p>&copy; 2026 The Nordalpha. Ambiance Boréale.</p>
+  </footer>
+
+</body>
+</html>
